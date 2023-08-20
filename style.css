@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: #80877f;
+  font-family: "Roboto";
+  --bgPrimay: #2874f0;
+  --bgSecondary: #f1f3f6;
+}
+
+/* =================================
+          Global CSS
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #dedfde; */
+}
+
+ul {
+  list-style-type: none;
+  color: var(--primaryTextColor);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryTextColor);
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ---------------***-------------- */
+
+/* =================================
+          Navbar CSS
+================================= */
+nav {
+  background-color: var(--bgPrimay);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0px;
+}
+
+.logo div {
+  font-size: 12px;
+  margin-top: -2px;
+  font-style: italic;
+}
+
+.plus {
+  color: yellow;
+  font-weight: 600;
+}
+
+input[type="search"] {
+  width: 30vw;
+  padding: 8px 10px;
+  border: none;
+}
+
+nav ul li:nth-child(2) {
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+/* input[type="search"]:focus-visible {
+  border: none;
+} */
+
+.loginBtn {
+  color: #2874f0;
+  background-color: #fff;
+  padding: 7px 40px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* ---------------***-------------- */
+
+/* =================================
+          Header CSS
+================================= */
+.wrapper {
+  background-color: var(--bgSecondary);
+  padding-bottom: 30px;
+}
+header {
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+.header img {
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  font-size: 40px;
+  margin: 5px auto;
+  position: absolute;
+  top: 4rem;
+  display: block;
+  padding: 30px 15px;
+  background-color: #fff;
+}
+
+.prevBtn {
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nextBtn {
+  position: absolute;
+  right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* ---------------***-------------- */
+
+/* =================================
+  Products Section CSS
+================================= */
+
+.products {
+  display: flex;
+  height: min-content;
+  width: 85%;
+  gap: 40px;
+  position: relative;
+  overflow-x: auto;
+  padding: 30px 0px;
+  background-color: #fff;
+  margin: 10px auto 15px auto;
+  border-radius: 10px;
+}
+
+.products::-webkit-scrollbar {
+  width: 0;
+}
+
+.product {
+  text-align: center;
+}
+
+.product p {
+  font-size: 12px;
+}
+
+.product h3,
+.product .price {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.product .price {
+  color: green;
+}
+
+.product img {
+  height: 160px;
+}
+
+.rightArrow {
+  position: absolute;
+  padding: 20px 10px;
+  margin: 0px;
+  right: 0;
+  background-color: aquamarine;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* ---------------***-------------- */
+
+/* =================================
+  footer-top section links CSS
+================================= */
+.links_footer,
+.footer_description {
+  color: var(--secondaryTextColor);
+  padding: 1.5rem;
+  padding-top: 3rem;
+}
+
+.links_footer a {
+  color: var(--secondaryTextColor);
+  border-right: 1px solid var(--secondaryTextColor);
+  padding: 1px 4px;
+  font-size: 12px;
+  height: min-content;
+}
+
+.footer_description * {
+  font-size: 11px;
+}
+
+.footer_description h1,
+.footer_description h2 {
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+/* =================================
+         Footer CSS
+================================= */
+
+footer {
+  padding: 2rem 0rem;
+  background-color: #172337;
+}
+
+.footer_content_wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.footer_content_wrapper ul {
+  flex: 0.5;
+}
+
+.footer_content_wrapper ul li {
+  font-size: 13px;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.mailUs {
+  border-left: 1px solid var(--secondaryTextColor);
+  padding-left: 30px;
+  height: min-content;
+}
+
+.footer_content_wrapper ul:nth-of-type(5) li,
+.footer_content_wrapper ul:nth-of-type(6) li {
+  line-height: 1.5;
+}
+
+.footer_content_wrapper ul li:first-child {
+  font-size: 14px;
+  line-height: 2.5;
+  color: var(--secondaryTextColor);
+}
+
+.other_page_links {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--secondaryTextColor);
+}
+
+.other_page_links ul {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  gap: 30px;
+  font-size: 14px;
+}
